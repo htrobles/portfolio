@@ -7,7 +7,7 @@ const Navbar = () => {
 				<nav className="navbar navbar-expand-md">
 					<a href="/" className="navbar-brand">HECTOR ROBLES</a>
 					<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-						<span><i class="fas fa-bars"></i></span>
+						<span><i className="fas fa-bars"></i></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarCollapse">
 						<ul className="navbar-nav ml-auto">

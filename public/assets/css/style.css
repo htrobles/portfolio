@@ -10162,10 +10162,6 @@ h2 {
   font-family: "Julius Sans One", sans-serif;
 }
 
-.jumbotron {
-  margin-bottom: 0px;
-}
-
 #root {
   min-height: 100vh;
   position: relative;
@@ -10178,9 +10174,11 @@ h2 {
 
 #navbar {
   position: fixed;
-  background-color: rgba(240, 240, 240, 0.95);
   width: 100vw;
   z-index: 1;
+}
+#navbar * {
+  color: #f0f0f0;
 }
 
 .section {
@@ -10209,15 +10207,25 @@ h2 {
   color: #2A797D;
   font-family: "Kanit", sans-serif;
   font-weight: 900;
-  font-size: 8em;
+  font-size: 5em;
   letter-spacing: 0.1em;
-  position: absolute;
-  bottom: 1.25em;
-  z-index: -1;
+  margin-bottom: 0;
 }
 
 .hero__hr {
   border-top: 2px solid #f0f0f0;
+  margin: 0;
+  position: relative;
+  top: -1em;
+}
+
+.hero__subhead {
+  position: relative;
+  top: -0.5em;
+}
+
+.hero__headline {
+  margin-bottom: 0;
 }
 
 .about .img {
