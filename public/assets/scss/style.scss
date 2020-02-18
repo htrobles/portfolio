@@ -175,6 +175,9 @@ a.nav-link:hover {
 		color: $clr-light;
 		@include center();
 	}
+	.hero__subhead {
+		font-size: 1.5rem;
+	}
 }
 
 .hero__hr-text {
@@ -231,7 +234,7 @@ a.nav-link:hover {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0, .5);
+		background-color: rgba($color: $clr-primary, $alpha: .7);
 	}
 
 	.project__title {
