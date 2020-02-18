@@ -10158,8 +10158,25 @@ body {
   background-color: #f0f0f0;
 }
 
-h2 {
+h1, h3, h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2, h4 {
   font-family: "Julius Sans One", sans-serif;
+}
+
+hr {
+  border-top: 2px solid #333745;
+  margin: 0;
+  opacity: 0.75;
+  position: relative;
+  top: -0.5em;
+  margin-bottom: 4px;
+}
+
+.btn {
+  border-radius: 0px;
 }
 
 #root {
@@ -10213,19 +10230,15 @@ h2 {
 }
 
 .hero__hr {
-  border-top: 2px solid #f0f0f0;
+  border-top: 4px solid #f0f0f0;
   margin: 0;
   position: relative;
   top: -1em;
 }
 
-.hero__subhead {
-  position: relative;
-  top: -0.5em;
-}
-
 .hero__headline {
   margin-bottom: 0;
+  line-height: 2rem;
 }
 
 .about .img {
@@ -10235,13 +10248,10 @@ h2 {
 .about p {
   margin-bottom: 0px;
 }
-.about .subsection.professional {
-  margin-bottom: 100px;
-}
 
 .portfolio {
   height: 400px;
-  background-color: #3C6E71;
+  background-color: #e5e5e5;
 }
 .portfolio .projects {
   position: relative;
@@ -10251,7 +10261,6 @@ h2 {
   height: 300px;
   position: relative;
   color: #f0f0f0;
-  top: -100px;
   overflow: hidden;
 }
 .portfolio .img-container {
@@ -10262,60 +10271,120 @@ h2 {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transform: scale(1.25);
-  bottom: 10%;
+  transform: scale(1.05);
 }
-.portfolio .project-details {
+.portfolio .project__details {
   position: absolute;
-  bottom: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
 }
-.portfolio .tile:hover .project-details {
-  bottom: 0%;
-  transition: all 0.5s ease-out;
-}
-.portfolio .tile:not(hover) .project-details {
-  transition: all 0.5s ease-out;
-}
-.portfolio .tile:hover .img {
-  bottom: 0%;
-  transition: all 0.5s ease-out;
-}
-.portfolio .tile:not(hover) .img {
-  transition: all 0.5s ease-out;
-}
-.portfolio .project-title {
+.portfolio .project__title {
   font-weight: bold;
   font-size: 1.1rem;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
 }
-.portfolio .technologies {
+.portfolio .project__description {
+  position: relative;
+  font-size: 0.8rem;
+  left: -10%;
+  opacity: 0;
+}
+.portfolio .project__btn {
+  color: #333745;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  position: relative;
+  left: -10%;
+  opacity: 0;
+}
+.portfolio .project__technologies {
   position: absolute;
   padding-bottom: 3em;
   bottom: 0%;
 }
-.portfolio .technology {
+.portfolio .project__technology {
   font-size: 0.7rem;
   background-color: #FCAF58;
+  color: #333745;
   padding: 0.2em 0.5em;
   border-radius: 2px;
+  position: relative;
+  bottom: -100%;
+  opacity: 0;
+}
+.portfolio .tile:hover .project__details {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-out;
+}
+.portfolio .tile:not(hover) .project__details {
+  transition: all 200ms ease-out;
+  transition-delay: 1000ms;
+}
+.portfolio .tile:hover .img {
+  transform: scale(1);
+  transition: all 500ms ease-out;
+}
+.portfolio .tile:not(hover) .img {
+  transition: all 1000ms ease-out;
+}
+.portfolio .tile:hover .project__title {
+  top: 0%;
+  transform: translateY(0);
+  transition: all 400ms ease-in-out;
+}
+.portfolio .tile:not(hover) .project__title {
+  transition: all 400ms ease-in-out;
+  transform: translateY(-50%);
+  transition-delay: 1000ms;
+}
+.portfolio .tile:hover .project__description {
+  left: 0%;
+  opacity: 1;
+  transition: all 300ms ease-out;
+  transition-delay: 500ms;
+}
+.portfolio .tile:not(hover) .project__description {
+  transition: all 300ms ease-out;
+  transition-delay: 600ms;
+}
+.portfolio .tile:hover .project__btn {
+  left: 0%;
+  opacity: 1;
+  transition: all 300ms ease-out;
+  transition-delay: 750ms;
+}
+.portfolio .tile:hover .project__technology {
+  bottom: 0%;
+  opacity: 1;
+  transition: all 300ms ease-out;
+  transition-delay: 1000ms;
+}
+.portfolio .tile:not(hover) .project__technology {
+  transition: all 300ms ease-out;
+}
+
+.tech__icon {
+  filter: saturate(0);
+}
+
+.tech__icon:hover {
+  filter: saturate(1);
+  transition: all 500ms ease-out;
+}
+
+.tech__icon:not(hover) {
+  filter: saturate(0);
+  transition: all 500ms ease-out;
 }
 
 @media only screen and (min-width: 768px) {
   .hero__hr-text {
     font-size: 12rem;
     bottom: 3rem;
-    animation: typing 3s steps(3.5, end);
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 45%;
-    }
   }
 }
 
