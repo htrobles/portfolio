@@ -24,7 +24,7 @@ const Portfolio = () => {
 										<h5 className="project__title">{project.title}</h5>
 										<p className="project__description">{project.description}</p>
 										<div className="project__btn">
-											<a href={project.url} target="blank" className="btn">VIEW PROJECT</a>
+											<a href={project.url} target="_blank" className="btn">VIEW PROJECT</a>
 										</div>
 										<div className="project__technologies pr-5">
 										{/* START OF PROJECT TECHS */}

@@ -6,7 +6,7 @@ const Footer = () => {
 			<div className="py-3" id="footer">
 				<div className="container">
 					<span className="d-inline-block py-2">&copy; {(new Date()).getFullYear()} Hector Robles. All Rights Reserved.</span>
-					<button className="d-none d-md-block footer__button" data-toggle="modal" data-target="#contactModal">CONTACT</button>
+					<button className="d-none d-md-block footer__button" data-toggle="modal" data-target="#contactModal">HIRE ME</button>
 				</div>
 			</div>
 	
@@ -14,7 +14,7 @@ const Footer = () => {
 				<div className="modal-dialog modal-dialog-centered modal-lg" role="document">
 					<div className="modal-content">
 						<div className="modal-header">
-							<h5 className="modal-title" id="contactModalTitle">CONTACT ME</h5>
+							<h5 className="modal-title" id="contactModalTitle">HIRE ME</h5>
 						</div>
 						<div className="modal-body p-md-5">
 							<div className="row">
@@ -36,8 +36,9 @@ const Footer = () => {
 									</form>
 								</div>
 								<div className="col-lg-6 pl-5">
-									<a href="tel:+639175735851" className="d-block mt-4 mb-3"><i className="mr-3 fas fa-phone-square-alt"></i> +63 917 573 5851</a>
-									<a href="mailto:hjt.robles@gmail.com" className="d-block"><i className="mr-3 fas fa-envelope"></i> hjt.robles@gmail.com</a>
+									<a href="tel:+639175735851" className="d-block mt-4 mb-3"><i className="mr-3 fas fa-phone-square-alt"></i>+63 917 573 5851</a>
+									<a href="mailto:hjt.robles@gmail.com" className="d-block mb-3"><i className="mr-3 fas fa-envelope"></i>hjt.robles@gmail.com</a>
+									<a href="./assets/downloads/hector-robles-resume.pdf" target="_blank" className="d-block"><i className="mr-3 fas fa-file"></i>Download my resume</a>
 								</div>
 							</div>
 						</div>
