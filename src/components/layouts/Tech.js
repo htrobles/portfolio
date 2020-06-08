@@ -6,7 +6,7 @@ const Tech = () => {
 			<div className="container py-5">
 				<div className="row p-lg-5">
 					<div className="col-12 mb-4">
-						<h5>Technologies</h5>
+						<h5>TECHNOLOGIES</h5>
 						<hr/>
 					</div>
 					<div className="col-md-8 border-right">

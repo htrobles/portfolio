@@ -10295,8 +10295,16 @@ a.nav-link:hover {
   line-height: 2rem;
 }
 
+#about {
+  min-height: auto;
+}
 #about p {
   margin-bottom: 0px;
+}
+
+.about__img-container {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #portfolio {
