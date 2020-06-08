@@ -17,7 +17,7 @@ const About = () => {
 								</div>
 								<div className="copy col-md-8 d-md-flex flex-md-column justify-content-md-center">
 									<h5 className="text-center text-md-left">Designer</h5>
-									<p className="text-justify text-md-left">I am a developer who is an designer first. I believe that websites and web apps should not only be functional but also pleasing to look at. My approach is UI/UX-driven. For me, to make sure that the user gets results with ease and comfort is as important as getting the correct results.</p>
+									<p className="text-justify text-md-left">I am a developer who is a designer first. I believe that websites and web apps should not only be functional but also pleasing to look at. My approach is UI/UX-driven. For me, to make sure that the user gets results with ease and comfort is as important as getting the correct results.</p>
 								</div>
 							</div>
 						</div>
