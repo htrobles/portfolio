@@ -10491,5 +10491,10 @@ a.nav-link:hover {
     transition: all 300ms ease-out;
   }
 }
+@media only screen and (max-width: 400px) {
+  #footer {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
