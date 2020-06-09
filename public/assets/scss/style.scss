@@ -416,3 +416,9 @@ a.nav-link:hover {
 		}
 	}
 }
+
+@media only screen and (max-device-width: 400px) {
+	#footer {
+		display: none;
+	}
+}
