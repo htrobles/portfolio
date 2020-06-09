@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 const Footer = () => {
 	return(
 		<Fragment>
-			<div className="py-3" id="footer">
+			<div className="py-3 d-none d-md-block" id="footer">
 				<div className="container">
 					<span className="d-inline-block py-2">&copy; {(new Date()).getFullYear()} Hector Robles. All Rights Reserved.</span>
 					<button className="d-none d-md-block footer__button" data-toggle="modal" data-target="#contactModal">HIRE ME</button>
