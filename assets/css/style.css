@@ -10299,8 +10299,16 @@ a.nav-link:hover {
   line-height: 2rem;
 }
 
+#about {
+  min-height: auto;
+}
 #about p {
   margin-bottom: 0px;
+}
+
+.about__img-container {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #portfolio {
@@ -10485,6 +10493,11 @@ a.nav-link:hover {
     bottom: -100%;
     opacity: 0;
     transition: all 300ms ease-out;
+  }
+}
+@media only screen and (max-height: 400px) {
+  #footer {
+    position: initial;
   }
 }
 
